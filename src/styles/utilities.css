@@ -1,0 +1,20 @@
+/* ! fonts size */
+@utility text-usual {
+  font-size: min(1.4vw, 16px);
+}
+@utility text-headline {
+  font-size: min(3.5vw, 40px);
+  font-family: var(--font-decor);
+  font-weight: 600;
+}
+@utility text-decor {
+  font-size: min(3.5vw, 16px);
+  font-family: var(--font-decor);
+  font-weight: 400;
+}
+
+/* ! color text */
+/* @utility color-decor {
+  font-family: var(--font-decor);
+  font-weight: 700;
+} */

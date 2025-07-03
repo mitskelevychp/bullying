@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import "../styles/utilities.css";
+
+@font-face {
+  font-family: "Caveat";
+  src:
+    url("/fonts/Caveat-Regular.woff2") format("woff2"),
+    url("/fonts/Caveat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Caveat";
+  src:
+    url("/fonts/Caveat-SemiBold.woff2") format("woff2"),
+    url("/fonts/Caveat-SemiBold.woff") format("woff");
+  font-weight: 700;
+  font-style: bold;
+}
+
+:root {
+  --font-decor: "Caveat", sans-serif;
+  --color-background: #ffffff;
+  --color-background-decor: #e0a943;
+}
+
+body {
+  background-color: var(--color-background);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-decor);
+  font-weight: 600;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}

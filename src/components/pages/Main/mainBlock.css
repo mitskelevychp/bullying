@@ -1,0 +1,28 @@
+.blockContainer {
+  /* margin: 0; */
+  padding: 20px;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.text-container {
+  max-width: 100%;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  font-weight: 500;
+}
+
+.highlight {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+.fade {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.emphasis {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.8);
+}
