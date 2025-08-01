@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { generateMetadata } from "@/lib/utils/seo/generateMetadata";
-import { MainPage } from "@/components";
+import { MainPage } from "@/components/pages/Main/MainPage";
 
 // TODO:
 export const metadata: Metadata = generateMetadata({
@@ -9,6 +9,9 @@ export const metadata: Metadata = generateMetadata({
     "Прості інтернет-рішення для вашого бізнесу: створення сайтів, web-застосунків, SEO-просування. ForBiz UA — ваш технічний партнер у Борисполі",
   pathname: "/",
 });
+
+export const dynamic = "force-static";
+export const revalidate = 3600;
 
 export default function AppPage() {
   return <MainPage />;

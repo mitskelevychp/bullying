@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { generateMetadata } from "@/lib/utils/seo/generateMetadata";
-import { AboutPage } from "@/components";
+import { AboutPage } from "@/components/pages/About/AboutPage";
 
 // TODO:
 export const metadata: Metadata = generateMetadata({

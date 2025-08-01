@@ -44,12 +44,12 @@ export default async function ArticlePage({ params }: Props) {
   if (!article) return notFound();
 
   return (
-    <main className="max-w-3xl mx-auto p-6">
+    <div className="max-w-3xl mx-auto p-6">
       <h1 className="text-3xl font-bold mb-4">{article.h1}</h1>
       <div
         className="prose"
         dangerouslySetInnerHTML={{ __html: article.text }}
       />
-    </main>
+    </div>
   );
 }

@@ -14,11 +14,7 @@ import { MobileMenu } from "./header/Menu/MobileMenu/MobileMenu";
 import { Footer } from "./footer/Footer";
 
 // Home
-import { MainPage } from "./pages/Main/MainPage";
 import { MainBlock } from "./pages/Main/MainBlock";
-
-// About
-import { AboutPage } from "./pages/About/AboutPage";
 
 export {
   GradientText,
@@ -28,7 +24,5 @@ export {
   Burger,
   MainMenu,
   MobileMenu,
-  MainPage,
   MainBlock,
-  AboutPage,
 };

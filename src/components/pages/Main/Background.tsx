@@ -2,7 +2,7 @@ import "./mainBlock.css";
 
 export const Background = () => {
   return (
-    <div className="text-container opacity-20">
+    <div className="text-container opacity-15">
       <span className="highlight">Bullying research</span> indicates that{" "}
       <span className="emphasis">peer victimization</span> affects approximately
       20-30% of students worldwide.{" "}
@@ -17,17 +17,17 @@ export const Background = () => {
       significant concern in digital age harassment.{" "}
       <span className="emphasis">Longitudinal studies</span> reveal lasting
       psychological impacts on victims.{" "}
-      <span className="fade">Prevention programs</span> must address both
-      individual and systemic factors.{" "}
-      <span className="highlight">Teacher training</span> is essential for
-      effective intervention strategies.{" "}
-      <span className="emphasis">Restorative justice</span> approaches offer
-      alternative disciplinary methods.{" "}
-      <span className="fade">Peer mediation</span> programs empower students to
-      resolve conflicts.{" "}
-      <span className="highlight">Social-emotional learning</span> curricula
-      build empathy and communication skills. {/*  */}
       <span className="hidden md:inline">
+        <span className="fade">Prevention programs</span> must address both
+        individual and systemic factors.{" "}
+        <span className="highlight">Teacher training</span> is essential for
+        effective intervention strategies.{" "}
+        <span className="emphasis">Restorative justice</span> approaches offer
+        alternative disciplinary methods.{" "}
+        <span className="fade">Peer mediation</span> programs empower students
+        to resolve conflicts.{" "}
+        <span className="highlight">Social-emotional learning</span> curricula
+        build empathy and communication skills. {/*  */}
         <span className="emphasis">Environmental modifications</span> can reduce
         opportunities for bullying.{" "}
         <span className="fade">Data collection</span> methods include surveys,
@@ -41,7 +41,7 @@ export const Background = () => {
         <span className="highlight">Cultural considerations</span> shape
         perceptions of aggressive behavior.{" "}
         <span className="emphasis">Policy development</span> requires
-        evidence-based approaches.{" "}
+        evidence-based approaches. {/* <span className="hidden md:inline"> */}
         <span className="fade">Multi-tiered support</span> systems address
         diverse student needs.{" "}
         <span className="highlight">Trauma-informed practices</span> recognize
@@ -62,7 +62,7 @@ export const Background = () => {
         across multiple studies. <span className="fade">Meta-analyses</span>{" "}
         quantify overall effect sizes of interventions.{" "}
         <span className="highlight">Stakeholder engagement</span> ensures
-        program sustainability and buy-in.{" "}
+        program sustainability and buy-in.
         <span className="emphasis">Implementation fidelity</span> affects
         program outcomes significantly.{" "}
         <span className="fade">Cost-effectiveness</span> analysis informs
@@ -75,6 +75,8 @@ export const Background = () => {
         prevention tools.{" "}
         <span className="highlight">Measurement instruments</span> assess
         various aspects of bullying behavior.{" "}
+      </span>
+      <span className="hidden lg:inline">
         <span className="emphasis">Longitudinal tracking</span> monitors changes
         over time. <span className="fade">Intervention dosage</span> influences
         program effectiveness.{" "}
