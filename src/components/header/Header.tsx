@@ -10,13 +10,13 @@ import "./header.css";
 const Logo = () => {
   const path = usePathname();
   return path === "/" ? (
-    <div className="w-[150px] flex justify-start items-center text-3xl text-black text-headline">
+    <div className="w-[150px] flex justify-start items-center text-4xl text-black text-headline">
       Про булінг
     </div>
   ) : (
     <Link
       href="/"
-      className="w-[150px] flex justify-start items-center text-3xl text-black text-headline"
+      className="w-[150px] flex justify-start items-center text-4xl text-black text-headline"
     >
       Про булінг
     </Link>

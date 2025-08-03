@@ -2,19 +2,26 @@
 @utility text-usual {
   font-size: min(1.4vw, 16px);
 }
-@utility text-headline {
-  font-size: min(3.5vw, 40px);
+@utility text-h1 {
+  font-size: min(8vw, 40px);
   font-family: var(--font-decor);
   font-weight: 600;
 }
-@utility text-decor {
+@utility text-h2 {
+  font-size: min(2.5vw, 20px);
+  font-weight: 600;
+}
+/* @utility text-decor {
   font-size: min(3.5vw, 16px);
   font-family: var(--font-decor);
   font-weight: 400;
+} */
+@utility text-headline {
+  font-family: var(--font-decor);
+  font-weight: 700;
 }
 
 /* ! color text */
-/* @utility color-decor {
-  font-family: var(--font-decor);
-  font-weight: 700;
-} */
+@utility color-accent {
+  color: var(--color-accent);
+}

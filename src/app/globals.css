@@ -22,17 +22,11 @@
   --font-decor: "Caveat", sans-serif;
   --color-background: #ffffff;
   --color-background-decor: #e0a943;
+  --color-accent: oklch(64.6% 0.222 41.116);
 }
 
 body {
   background-color: var(--color-background);
-}
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-decor);
-  font-weight: 600;
 }
 
 .container {

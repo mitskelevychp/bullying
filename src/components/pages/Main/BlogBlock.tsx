@@ -22,7 +22,7 @@ export function BlogBlock({ articles }: BlogBlockProps) {
               key={article.slug}
               className="border rounded-lg p-4 hover:shadow-lg transition-shadow"
             >
-              <Link href={`/blog/${article.slug}`} className="block">
+              <Link href={`/materials/${article.slug}`} className="block">
                 <h3 className="text-lg font-semibold mb-2 text-blue-600 hover:underline">
                   {article.title}
                 </h3>
@@ -33,7 +33,7 @@ export function BlogBlock({ articles }: BlogBlockProps) {
         </div>
         <div className="mt-6 text-center">
           <Link
-            href="/blog"
+            href="/materials"
             className="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors"
           >
             Дивитися всі статті

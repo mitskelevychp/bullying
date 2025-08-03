@@ -1,10 +1,10 @@
-import { About } from "./About";
+import { WhatToDo } from "./WhatToDo";
 // import { Partners } from "./Partners";
 
-export function AboutPage() {
+export function WhatToDoPage() {
   return (
     <>
-      <About />
+      <WhatToDo />
       {/* <Partners /> */}
     </>
   );

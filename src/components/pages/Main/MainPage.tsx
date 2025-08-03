@@ -1,29 +1,29 @@
-// import { MainBlock } from "@/components";
-// import { BlogBlock } from "./BlogBlock";
-
-// export async function MainPage() {
-//   return (
-//     <>
-//       <MainBlock />
-//       <BlogBlock />
-//     </>
-//   );
-// }
+import { getPostsByCategory } from "@/lib/markdown";
+import { MainPageClient } from "@/components/MainPageClient";
+import { slugify } from "@/lib/utils/utils";
 import { MainBlock } from "@/components";
-import { BlogBlock } from "./BlogBlock";
-import { getArticlesFromSheet } from "@/lib/sheets";
 
 export async function MainPage() {
-  // Отримуємо статті тут (на серверному рівні)
-  const articles = await getArticlesFromSheet();
+  const generalCategorySlug = slugify("Загальне");
+  const nonGeneralCategorySlug = slugify("Не загальне");
+  const otherCategorySlug = slugify("Інше");
 
-  // Беремо тільки 3 останні статті
-  const latestArticles = articles.slice(0, 3);
+  const generalPosts = getPostsByCategory(generalCategorySlug, 3);
+  const nonGeneralPosts = getPostsByCategory(nonGeneralCategorySlug, 3);
+  const otherPosts = getPostsByCategory(otherCategorySlug, 3);
+
+  // Якщо вам потрібен блок "Інші цікаві статті" (тобто всі, крім "Загальне" та "Не загальне"),
+  // ви можете додати ще один виклик getPostsExcludingCategory, передавши масив slug-ів
+  // або просто getAllPostsMetadata і фільтрувати на клієнті, якщо це не критично для SSG.
 
   return (
     <>
       <MainBlock />
-      <BlogBlock articles={latestArticles} />
+      <MainPageClient
+        generalPosts={generalPosts}
+        nonGeneralPosts={nonGeneralPosts}
+        otherPosts={otherPosts}
+      />
     </>
   );
 }

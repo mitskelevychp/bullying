@@ -1,4 +1,5 @@
 import { Header, Footer } from "@/components";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import "./globals.css";
 // import Script from "next/script";
 
@@ -88,7 +89,10 @@ export default function RootLayout({ children }: LayoutProps) {
         </noscript> */}
 
         <Header />
-        <main className="w-full relative z-0">{children}</main>
+        <main className="w-full relative z-0">
+          <Breadcrumbs />
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

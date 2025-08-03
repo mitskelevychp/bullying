@@ -39,7 +39,7 @@ export const MainMenu: FC = ({}) => {
   return (
     <nav className="hidden md:flex justify-end items-center w-full md:mr-6 xl:mr-10">
       <ul className="flex justify-between items-center w-[250px] md:w-[550px] lg:w-[600px] xl:w-[750px] text-sm xl:text-lg text-usual uppercase">
-        <li className="flex justify-center items-center hover:text-stone-600 hover:text-shadow-lg hover:underline">
+        <li className="flex justify-center items-center hover:text-stone-600 hover:text-shadow-lg">
           {path === "/about" ? (
             <span className="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-orange-600 text-white">
               <span className="relative text-white text-shadow-lg">

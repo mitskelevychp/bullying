@@ -15,7 +15,7 @@ export default function BlogList({ articles }: { articles: Article[] }) {
 
   const handleClick = (slug: string) => {
     startTransition(() => {
-      router.push(`/blog/${slug}`);
+      router.push(`/materials/${slug}`);
     });
   };
 

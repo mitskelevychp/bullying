@@ -5,6 +5,10 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
+.blockContainer .color-white {
+  color: white;
+}
+
 .text-container {
   max-width: 100%;
   text-align: justify;
@@ -25,4 +29,19 @@
 .emphasis {
   font-style: italic;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.text-under-h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 240 12' xmlns='http://www.w3.org/2000/svg'><path d='M0,10 C30,14 60,4 100,6 C140,8 170,7 240,6' fill='none' stroke='oklch(64.6% 0.222 41.116)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  margin-left: 93px;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  height: 12px;
+  @media (min-width: 768px) {
+    width: 240px;
+    margin-left: 35px;
+  }
 }
